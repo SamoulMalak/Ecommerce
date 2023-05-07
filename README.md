@@ -1,4 +1,4 @@
-# ecommerce
+# Ecommerce
 A Web Site like amazon using  html ,css, bootstrap 5  and JavaScript
 <br>
 This website Using Local storage as dataBase 
