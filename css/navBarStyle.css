@@ -1,0 +1,346 @@
+/* navbar style */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    width: 100%;
+    /* background-color: #eaeded; */
+    box-sizing: border-box;
+}
+.first{
+    width: 100%;
+    height: 70px;
+    background-color: #131a22;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.first img{
+    width: 130px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.flex span,
+i{
+    color: white;
+}
+.logo{
+    flex: 0.18;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+.map{
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.map i{
+    margin-top: 17px;
+    padding-left: 5px;
+    font-size: 17px;
+}
+.map div{
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+}
+.map div span:first-child{
+    font-weight: 400;
+    font-size: 13px;
+}
+.map div span{
+    font-weight: bold;
+}
+.right{
+    justify-content: space-between;
+    flex: 0.29;
+    margin-right:10px ;
+    align-items: center;
+}
+.input{
+    width: 100%;
+    background-color: white;
+    flex: 0.53;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.input input{
+    outline: none;
+    width: 88%;
+    font-size: 16px;
+    padding: 10px 2px;
+    border: none;
+}
+.input .fa-search{
+    color: rgb(51,51,51);
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #febd69;
+    border-radius: 0 5px 5px 0;
+}
+.input div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid gray;
+    background-color: rgb(236,234,234);
+    padding: 6px;
+}
+.input div span{
+    border-radius: 5px 0 0 5px;
+    color: rgb(51,51,51);
+    padding: 6px 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.input .fa-caret-down{
+    color: rgb(51,51,51);
+    cursor: pointer;
+    padding: 5px;
+}
+.img i{
+    padding: 0;
+    margin: 0;
+    color: gray;
+}
+.img{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.right img{
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    margin: 0;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.sign{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 6px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.sign span-first-child{
+    font-weight: 400;
+    font-size:13px;
+}
+.sign span{
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+}
+.flex .ac span{
+    font-size: 15px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.fa-shopping-cart{
+    font-size: 30px;
+}
+.ca{
+    font-size: 14px;
+    font-weight: bold;
+}
+.cart{
+    align-items: flex-end;
+    position: relative;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.cart p{
+    position: absolute;
+    font-weight: bolder;
+    color: #131a22;
+    top: 7px;
+    left: 23px;
+}
+.cart:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.lego img:hover{
+    border:1px solid white;
+    border-radius: 3px;
+}
+.map:hover{
+    border:1px solid white;
+    border-radius: 3px;
+}
+.lang:hover{
+    border:1px solid white;
+    border-radius: 3px;
+}
+.sign:hover{
+    border:1px solid white;
+    border-radius: 3px;
+}
+.input .fa-search:hover{
+    background-color: #fdae46;
+}
+.input div:hover{
+    background-color: rgp(204,202,202);
+    color: black;
+}
+.sign span a {
+    color: #eaeded;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* registration style */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 130px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.card{
+    width: 330px;
+    height: 500px;
+    padding: 20px 26px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px auto 25px auto;
+}
+
+.card h1 {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.card label{
+    font-size: 13px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: 700;
+}
+
+.card input{
+    width: 277px;
+    height: 25px;
+    padding: 3px 7px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+}
+
+.card button{
+    width: 288px;
+    height: 31px;
+    padding: 3px 7px;
+    margin-top: 15px;
+    background-color: #f0c14b;
+    border: 1px solid #a6a6a6;
+    border-top-color:#949494;
+    background-image: linear-gradient(#f7da90,#e2b33b);
+    border-radius: 3px;
+}
+
+.card p,.card p a{
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: #0066c0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card a{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.icon::after{
+    display: inline-block;
+    content: "";
+    border-top: 4px solid transparent;
+    border-left: 4px solid #0066c0;
+    border-bottom: 4px solid transparent;
+    margin-left: 4px;
+}
+/* --------------------------------------------------------------------------- */
+/* Footer */
+
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 25px auto 15px auto;
+}
+
+footer .links a{
+    font-size: 12px;
+}
+
+footer::before{
+    content: "";
+    display: flex;
+    justify-content: center;
+    width: 88%;
+    margin: auto;
+    height: 44px;
+    margin-top: -35px;
+    border-top: 1px solid transparent;
+    box-shadow: 0 10px 15px -20px #333;
+}
+
+footer p{
+    font-size: 11px;
+    color: #555;
+    text-align: center;
+}
+
+

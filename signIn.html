@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+	integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="css/signIn.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script> -->
+	<link href="css/navBarStyle.css" rel="stylesheet">
+	<title>Amazon signIn Page</title>
+</head>
+<body>
+
+	<!-- navbar -->
+	
+	<header>
+		<div class="first">
+			<div class="flex logo">
+				<a href="default.html"><img src="img/logo.jpg" alt=""></a>
+			</div>
+			<div class="flex input">
+				<input type="text">
+				<i class="fas fa-search"></i>
+			</div>
+			<div class="flex right">
+
+				<div class="flex cart" id="cartlabel" onclick="ShowCartInPage();">
+					<i class="fas fa-shopping-cart" for="cartlabel"></i>
+					<span class="ca" for="cartlabel">Cart</span>
+					<p>0</p>
+				</div>
+				<div class="sign">
+					<span id="LogPart1"></span>
+				</div>
+				<div class="sign">
+					<span id="LogPart2"> </span>
+				</div>
+				
+			</div>
+		</div>
+	</header>
+
+
+	<!-- ------------------------------------------------------------------------------------------------------- -->
+	<!-- signIn -->
+	<section>
+		<div class="logo">
+			<img src="img/logo.jpg" alt="">
+		</div>
+		<div class="card">
+			
+			<h1>Sign in</h1>
+			<div class="form">
+				<labe>Email</labe>
+				<input type="email"  required id="UserEmail">
+				<labe>Password</labe>
+				<input type="password" required id="userPassword">
+				<button class="button login" onclick="LogIn();">Continue</button>
+			</div>
+		
+		</div>
+		<div class="breck">
+			<p>New to Amazon?</p>
+		</div>
+		<div class="btn">
+			<button><a href="registration.html">Create Your Amazon Account</a></button>
+		</div>
+		<footer class=" text-white py-3 " style="background-color:  #1e2225;">
+			<div class="container-fluid">
+			  <div class="row">
+				<div class="col-4">
+				  <p style="font-size: 25px; color: white;">About US</p>
+				</div>
+				<div class="col-4">
+				  <p style="font-size: 25px; color: white;">ITI JavaScript Project </p>
+				</div>
+				<div class="col-4">
+				  <p style="font-size: 25px; color: white;">E Commerece </p>
+		
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-12 text-center">
+				  <p style="font-size: 25px; color: white;"> All rights reserved By Joseph , Manar And Samoul ©2023</p>
+				 
+				</div>
+			  </div>
+			</div>
+		  </footer>
+		
+	</section>
+
+ <script src="js/User.js"></script>
+
+ <script src="js/UserCheckBar.js"></script>
+
+ <script src="js/UserCheckBar.js"></script>
+ <script src="js/Cart.js"></script>
+</body>
+</html>

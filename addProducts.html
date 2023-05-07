@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- for giving the style to desktop or mobile the same qua -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		  crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="css/navBarStyle.css" rel="stylesheet">   
+
+
+	<link href="css/addProducts.css" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add product</title>
+</head>
+<body>
+	<header>
+		<div class="first">
+			<div class="flex logo">
+				<a href="default.html"><img src="img/logo.jpg" alt=""></a>
+			</div>
+			<div class="flex input">
+				<input type="text">
+				<i class="fas fa-search"></i>
+			</div>
+			<div class="flex right">
+
+				<div class="flex cart" id="cartlabel" onclick="ShowCartInPage();">
+					<i class="fas fa-shopping-cart" for="cartlabel"></i>
+					<span class="ca" for="cartlabel">Cart</span>
+					<p>0</p>
+				</div>
+				<div class="sign">
+					<span id="LogPart1"></span>
+				</div>
+				<div class="sign">
+					<span id="LogPart2"> </span>
+				</div>
+				
+			</div>
+		</div>
+	</header>
+<!-- content -->
+<br>
+	<div class="container mt-5">
+		<h1 class="text-center mb-5">Add Product</h1>
+		
+		  <div class="mb-3" >
+			<label for="productName" class="form-label">Product Name</label>
+			<input type="text" class="form-control" id="productName" name="productName" placeholder="Enter product name" required>
+		  </div>
+		  <div class="mb-3">
+			<label for="description" class="form-label">Description</label>
+			<textarea class="form-control" id="description" name="description" placeholder="Enter description" required></textarea>
+		  </div>
+		  <div class="mb-3">
+			<label for="image" class="form-label">Image URL</label>
+			<input type="text" class="form-control" id="image" name="image" placeholder="Enter image URL" required>
+		  </div>
+		  <div class="mb-3">
+			<label for="brand" class="form-label">Category</label>
+			<select name="" id="category" class="form-control">
+				<option value="smartphones">smartphones</option>
+				<option value="laptops">laptops</option>
+				<option value="fragrances">fragrances</option>
+				<option value="skincare">skincare</option>
+				<option value="groceries">groceries</option>
+			</select>
+		  </div>
+		  <div class="mb-3">
+			<label for="brand" class="form-label">Brand</label>
+			<input type="text" class="form-control" id="brand" name="brand" placeholder="Enter brand" required>
+		  </div>
+		  <div class="mb-3">
+			<label for="price" class="form-label">Price</label>
+			<input type="number" class="form-control" id="price" name="price" placeholder="Enter price" required>
+		  </div>
+		  <div class="mb-3">
+			<label for="stock" class="form-label">Stock</label>
+			<input type="number" class="form-control" id="stock" name="stock" placeholder="Enter stock" required>
+		  </div>
+		  <button  class="btn btn-primary" onclick="AddProduct();"> add Product </button>
+		
+	  </div>
+	  <br>
+	  <footer class=" text-white py-3 " style="background-color:  #1e2225;">
+		<div class="container-fluid">
+		  <div class="row">
+			<div class="col-4">
+			  <p style="font-size: 25px; color: white;">About US</p>
+			</div>
+			<div class="col-4">
+			  <p style="font-size: 25px; color: white;">ITI JavaScript Project </p>
+			</div>
+			<div class="col-4">
+			  <p style="font-size: 25px; color: white;">E Commerece </p>
+	  
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-12 text-center">
+			  <p style="font-size: 25px; color: white;"> All rights reserved By Joseph , Manar And Samoul ©2023</p>
+			 
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	
+
+	  <script src="js/UserCheckBar.js"></script>
+	  <script src="js/User.js"></script>
+	  
+	  <script src="js/search.js"></script>
+  <script src="js/addProduct.js"></script>
+  <script src="js/Cart.js"></script>
+</body>
+</html>
